@@ -3,24 +3,26 @@ name: Generate Documentation
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*'   
 
 jobs:
   generate-docs:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
     - name: Install Doxygen
-      run: sudo apt-get install -y doxygen
+      run: sudo apt-get update && sudo apt-get install -y doxygen
+
     - name: Generate Doxygen documentation
       run: |
         cd laboratories/cicd-documentation
-        doxygen -g
-        doxygen
-    - name: Upload documentation
+        doxygen Doxyfile   # Rulează Doxygen cu Doxyfile existent
+
+    - name: Upload documentation artifact
       uses: actions/upload-artifact@v3
       with:
         name: documentation
         path: laboratories/cicd-documentation/html/
-        
