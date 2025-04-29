@@ -22,7 +22,7 @@ jobs:
         doxygen Doxyfile   # Rulează Doxygen cu Doxyfile existent
 
     - name: Upload documentation artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: documentation
         path: laboratories/cicd-documentation/html/
