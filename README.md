@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/ndleah)
@@ -248,3 +249,20 @@ If you have any feedback or ideas to improve this project, feel free to contact 
 <a href="https://github.com/ndleah">
   <img align="left" alt="Reeha's Github" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" />
 </a>
+||||||| empty tree
+=======
+## Systems Testing Course Resources
+
+This repository contains resources for the Systems Testing course.
+It contains laboratory content for the second half of the course.
+
+To clone the repository, use the following command:
+```bash
+git clone --recurse-submodules https://github.com/cs-pub-ro/systems-testing.git
+```
+
+To fetch all branches:
+```bash
+git submodule foreach --recursive git fetch --all
+```
+>>>>>>> 76980c2d516e8db639a9b838e1d3d265a0d44339
